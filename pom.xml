@@ -12,7 +12,7 @@
 	<artifactId>online-library</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>online-library</name>
-	<description>CRUD operations for library system</description>
+	<description>library management application</description>
 	<url/>
 	<licenses>
 		<license/>

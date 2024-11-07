@@ -36,7 +36,7 @@ public class BookServiceImpl  implements BookService {
 		Book book = bookRepository.findById(id).orElse(null);
 	    if (book != null) {
 	        book.setTitle(bookDetails.getTitle());
-	        book.setPublicationDate(bookDetails.getPublicationDate());
+	        book.setpublishedDate(bookDetails.getpublishedDate());
 	        book.setAuthor(bookDetails.getAuthor());
 	        book.setPublisher(bookDetails.getPublisher());
 	        return bookRepository.save(book);
@@ -69,7 +69,7 @@ public class BookServiceImpl  implements BookService {
 	@Override
 	public List<Book> sortBooksByPublicationDate() {
 		 return bookRepository.findAll().stream()
-		            .sorted((b1, b2) -> b1.getPublicationDate().compareTo(b2.getPublicationDate()))
+		            .sorted((b1, b2) -> b1.getpublishedDate().compareTo(b2.getpublishedDate()))
 		            .collect(Collectors.toList());
 	}
 

@@ -68,12 +68,12 @@ public class BookController {
 	        return bookService.sortBooksByTitle();
 	    }
 	 
-	    @GetMapping("/sort/publication-date")
+	    @GetMapping("/sort/published_date")
 	    public List<Book> sortBooksByPublicationDate() {
 	        return bookService.sortBooksByPublicationDate();
 	    }
 	 
-	    @GetMapping("/report")
+	    @GetMapping("/reports")
 	    public List<String> generateAuthorReport() {
 	        return bookService.generateAuthorReport();
 	    }
